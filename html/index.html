@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Clock</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href = "../styles/style.css" rel = "stylesheet">
+    <link href = "../styles/index.css" rel = "stylesheet">
+
+
+</head>
+    <body>
+        <script defer src="../java/java.js"></script>
+        <script defer src = "../java/index.js"></script>
+
+        <div id = "scr" class = "content">
+
+            <header>
+                <a href="" class = "logo">C-Clock</a>
+                
+            </header>
+
+            <main class = "content full-width">
+                <div class = "bar full-width">
+                    <div class = "row" id = "row">
+
+                        <div class = "clock">
+                            <button class = "ics material-symbols-outlined textButton clk" id = "clkBt">
+                                schedule
+                            </button>
+                            <span class = "icons-labels text-clock">Clock</span>
+                        </div>
+
+                        <div class = "alarm">
+                            <button id = "alarmBt" class = "ics material-symbols-outlined textButton alar">
+                                alarm
+                            </button>
+                            <span class = "icons-labels text-alarm">Alarm</span>
+                        </div>
+
+                        <div class = "stopwatch">
+                            <button id = "spwatchBt" class = "ics material-symbols-outlined textButton spwatch">
+                                    timer
+                            </button>
+                            <span class = "icons-labels text-stopwatch">Stop Watch</span>
+                        </div>
+
+                        <div class = "timer">
+                            <button id = "timerBt" class = "ics material-symbols-outlined textButton tim">
+                                    timelapse
+                            </button>
+                            <span class = "icons-labels text-timer">timer</span>
+                        </div>
+
+                        <div class = "pray">
+                            <button id = "prayBt"  class = "material-symbols-outlined ics textButton mosq">
+                                    mosque
+                            </button>
+
+                            <span class = "icons-labels text-mosque">Praying Time</span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class = "Disp">
+                    <div class = "Time" id = 'Time'>
+                        00:00:00
+                    </div>
+                   
+                            <p id = "date-data"> 00/00/00</p>
+                        
+                    
+                </div>
+            </main>
+            
+            <footer class = "full-width">
+
+            </footer>
+
+        </div>  
+    </body>
+</html>

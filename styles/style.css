@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif, monospace;
+}
+body{
+    background-color: #504a4a;
+    color: #e7e707;
+    min-height: 100vh;
+}
+div{
+    display: grid;
+}
+
+.content{
+    display: grid;
+
+}
+#scr{
+    min-height: 100vh;
+    width:100%;
+    grid-template-rows: 1fr 6fr 1fr;
+    overflow: hidden;
+}
+header{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.logo{
+    color:#e7e707;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.row button:not(.current):hover{
+    background-color: aliceblue;
+}
+main{
+    height: 90%;
+    justify-content: center;
+    grid-template-rows: 1fr 5fr ;
+}
+.content > .fullwidth{
+    column-width: full-width;
+}
+.bar{
+    display: grid;
+    height: max-content;
+    grid-auto-flow: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap:2em;
+}
+.row{
+    background-color:#413f3f ;
+    display: flex;
+    border-radius: 35px;
+    justify-content: space-between;
+}
+.row * {
+    position: relative;
+}
+
+.row div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.icons-labels{
+    display: none;
+    padding-top: 10px;
+    background:0 0;
+    color: aliceblue;
+}
+
+.clock:hover .text-clock{
+    display: inline;
+    position:absolute;
+    top:100%;
+}
+.timer:hover .text-timer{
+    display: inline;
+    position:absolute;
+    top:100%;
+}
+.alarm:hover .text-alarm{
+    display: inline;
+    position:absolute;
+    top:100%;
+    
+}
+.stopwatch:hover .text-stopwatch{
+    display: inline;
+    position:absolute;    
+    top:100%;
+}
+.pray:hover .text-mosque{
+    display: inline;
+    position:absolute;
+
+    top:100%;
+}
+
+.material-symbols-outlined{
+    font-size: 3rem;
+    display: inline-block;
+    color: black;
+}
+.textButton{
+    background: 0 0;
+    border: 0;
+    border-radius: 100px;
+    padding: 10px 40px;
+    transition: width 2s;
+    cursor: pointer;
+
+}
+
+
+.Disp{
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    border: 1px #858484 solid;
+    justify-content: center;
+}

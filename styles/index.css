@@ -1,0 +1,25 @@
+
+.Disp *{
+    padding: 20px;
+}
+.Time{
+    font-size: 3rem;
+}
+.Date{
+    display: flex;
+}
+.Box{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-left: 60px;
+    border: #858383 solid;
+    border-width: 1px;
+    box-sizing: content-box;
+    border-radius: 100px;
+    justify-content: center
+}
+
+.active_button{
+    background-color: #e7e707;
+}

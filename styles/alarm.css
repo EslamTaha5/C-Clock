@@ -1,0 +1,193 @@
+
+.Disp *{
+    padding: 20px;
+}
+.Time{
+    font-size: 3rem;
+}
+.setalarm{
+    padding: 0;
+}
+.alarm-button{
+    background-color: #504a4a;
+    color: #e7e707;
+    font-size: 1.3rem;
+    border: 1px solid #858484;
+    border-radius: 100px;
+    cursor: pointer;
+    padding:15px;
+}
+.alarm-button:hover{
+    background-color: hsl(0, 4%, 35%);
+}
+.alarm-button:active{
+    background-color: hsl(0, 4%, 40%);
+}
+.form-alarm{
+    display: none;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.pop-up{
+    display: block;
+}
+.form-content{
+
+    display: block;
+    flex-direction: column;
+    height: fit-content;
+    width: 600px;
+    position: relative;
+    top:55%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background-color: #504a4a;
+    border-radius: 10px;
+    text-align: center;
+}
+.form-content *{
+    display: flex;
+}
+.top-part{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 1px solid white;
+}
+.close-btn{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.cls{
+    display: none;
+}
+.input-box{
+    flex-direction: column;
+    margin: 10px 20px;
+}
+.input-box *{
+    line-height: 25px;
+}
+.input-gr{
+    display: inline-block;
+}
+.ar-btn{
+    display: inline-block;
+    padding: 0px;
+    border: 0;
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #dfdfdf;
+
+}
+.form-control{
+    border: 0;
+    min-width: 180px;
+    min-height: 28px;
+}
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 600px;
+}
+.form-body{
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 27px;
+    grid-auto-flow: column;
+    position: relative;
+
+}
+.sound-contorl{
+    flex-direction: column;
+}
+.sound{
+    flex-direction: row;
+    justify-content: space-between  ;
+    align-items: flex-end;
+}
+.sound-box{
+    flex-direction: column;
+}
+.start-song{
+    border:0;
+    align-items: center;
+    font-size: 2rem;
+    text-align: right;
+    background-color: #dfdfdf;
+}
+.rep-class{
+    position: relative;
+    margin-right: 98px;
+    align-items: flex-end;
+}
+.rep{
+    height: 28px;
+    width: 25px; 
+    margin-right: 15px;   
+    justify-content: center;
+    align-items: center;
+}
+.third-row{
+    justify-content: center;
+    align-items: center;
+}
+.cancel, .create {
+    margin: 20px;
+    color: #e7e707;
+    background-color: #504a4a;
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid #858484;
+    border-radius: 100px;
+}
+.alar-bt{
+  cursor: pointer;
+    background-color: #504a4a;
+    color :#e7e707;
+    text-align: center;
+    border: 1px solid #a09f9f;
+}
+.third-row-bt{
+    cursor: pointer;
+}
+.third-row *:hover{
+    background-color: #858484;
+}
+.third-row *:active{
+    background-color: #a09f9f;
+}
+.alarm-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0%;
+}
+.alarm-icons{
+    font-size: 2rem;
+    padding: 0px;
+}
+.counter *{
+    font-size: 1.3rem;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: grid;
+}
+.alarmed{
+    display: none;
+}
